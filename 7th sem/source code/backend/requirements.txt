@@ -1,0 +1,30 @@
+fastapi==0.135.1
+uvicorn[standard]==0.41.0
+slowapi==0.1.9
+SQLAlchemy==2.0.48
+pydantic-settings==2.13.1
+python-dotenv==1.2.2
+python-multipart==0.0.22
+python-jose[cryptography]==3.5.0
+passlib[bcrypt]==1.7.4
+
+# Agent and LLM providers
+langchain==1.2.12
+langchain-core==1.5.6
+langchain-community==0.4.1
+langchain-text-splitters==1.1.1
+langchain-openai==1.5.2
+langchain-google-genai==4.2.1
+langchain-anthropic==1.4.0
+langgraph==1.1.2
+
+# Retrieval. PyTorch is installed from the CPU index in CI.
+chromadb==1.5.5
+langchain-chroma==1.1.0
+langchain-huggingface==1.2.0
+sentence-transformers==5.3.0
+torch>=2.2.0
+
+# HTTP clients and test/runtime helpers
+httpx==0.28.1
+bcrypt==5.0.0

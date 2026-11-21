@@ -1,0 +1,10 @@
+# Secrets and local state never belong in the image; compose supplies .env at runtime.
+.env
+onboarding.db*
+chroma_db/
+sent_emails/
+__pycache__/
+*.pyc
+.pytest_cache/
+venv/
+.venv/
