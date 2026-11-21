@@ -1,0 +1,46 @@
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: novabyte-backend
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    # API keys and provider settings come from backend/.env (not baked into the image).
+    env_file:
+      - ./backend/.env
+    environment:
+      - DEBUG=true
+      - HOST=0.0.0.0
+      - PORT=8000
+      - FRONTEND_BASE_URL=http://localhost:5173
+      - CORS_ORIGINS=http://localhost:5173,http://localhost:3000,http://localhost:80
+      - SQLITE_DB_PATH=/app/data/onboarding.db
+    volumes:
+      - backend_data:/app/data
+      - chroma_data:/app/chroma_db
+      # HR admins edit these documents at runtime; the volume is seeded from the image on first start.
+      - knowledge_base_data:/app/knowledge_base
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: novabyte-frontend
+    restart: unless-stopped
+    ports:
+      - "5173:80"
+    depends_on:
+      backend:
+        condition: service_started
+
+volumes:
+  backend_data:
+  chroma_data:
+  knowledge_base_data:

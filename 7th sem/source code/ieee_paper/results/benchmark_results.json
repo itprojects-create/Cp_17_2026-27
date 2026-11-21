@@ -1,0 +1,373 @@
+{
+  "summary": {
+    "distance_metric": "l2",
+    "threshold": 0.405,
+    "k": 4,
+    "hit_rate": 1.0,
+    "avg_keyword_precision": 0.8388888888888889,
+    "avg_similarity": 0.49641383633627256,
+    "avg_citations": 3.8,
+    "latency_ms": {
+      "cold_start": 314.5230000009178,
+      "mean": 15.280259999174936,
+      "median": 15.07859999401262,
+      "p95": 17.361099999106955
+    },
+    "persona_reranked_share": 0.5714285714285714,
+    "persona_avg_delta_top_score": 0.2151670025495109
+  },
+  "ingestion": {
+    "source_documents": 7,
+    "chunks": 233,
+    "vectors_stored": 233,
+    "avg_chunk_chars": 252,
+    "chunking_seconds": 0.017
+  },
+  "per_category": {
+    "Environment Setup": {
+      "queries": 4,
+      "avg_similarity": 0.5324897542342227,
+      "avg_keyword_precision": 0.5416666666666666,
+      "hits": 4
+    },
+    "Policies & Security": {
+      "queries": 3,
+      "avg_similarity": 0.47397397306831296,
+      "avg_keyword_precision": 1.0,
+      "hits": 3
+    },
+    "Organization Structure": {
+      "queries": 2,
+      "avg_similarity": 0.5191777420664827,
+      "avg_keyword_precision": 1.0,
+      "hits": 2
+    },
+    "Engineering Standards": {
+      "queries": 2,
+      "avg_similarity": 0.4719592967023907,
+      "avg_keyword_precision": 1.0,
+      "hits": 2
+    },
+    "FAQ": {
+      "queries": 2,
+      "avg_similarity": 0.4414849161062622,
+      "avg_keyword_precision": 0.8333333333333333,
+      "hits": 2
+    },
+    "Architecture": {
+      "queries": 1,
+      "avg_similarity": 0.47515668270702377,
+      "avg_keyword_precision": 0.75,
+      "hits": 1
+    },
+    "Cloud Infrastructure": {
+      "queries": 1,
+      "avg_similarity": 0.5539260164449632,
+      "avg_keyword_precision": 1.0,
+      "hits": 1
+    }
+  },
+  "retrieval": [
+    {
+      "category": "Environment Setup",
+      "query": "How do I set up the Node.js backend locally?",
+      "hit": true,
+      "keyword_precision": 0.25,
+      "similarity": 0.5768517910571278,
+      "citations": 4,
+      "latency_ms": 17.361099999106955,
+      "top_sources": [
+        "setup_guides.md",
+        "setup_guides.md",
+        "setup_guides.md",
+        "architecture_documentation.md"
+      ]
+    },
+    {
+      "category": "Environment Setup",
+      "query": "How do I set up the Python backend services?",
+      "hit": true,
+      "keyword_precision": 0.25,
+      "similarity": 0.4944604741186606,
+      "citations": 4,
+      "latency_ms": 14.426599998841994,
+      "top_sources": [
+        "setup_guides.md",
+        "setup_guides.md",
+        "setup_guides.md",
+        "engineering_standards.md"
+      ]
+    },
+    {
+      "category": "Environment Setup",
+      "query": "What do I need to install for React frontend development?",
+      "hit": true,
+      "keyword_precision": 0.6666666666666666,
+      "similarity": 0.537834674021848,
+      "citations": 4,
+      "latency_ms": 15.036400000099093,
+      "top_sources": [
+        "setup_guides.md",
+        "setup_guides.md",
+        "architecture_documentation.md",
+        "setup_guides.md"
+      ]
+    },
+    {
+      "category": "Environment Setup",
+      "query": "Which IDE extensions are required for all developers?",
+      "hit": true,
+      "keyword_precision": 1.0,
+      "similarity": 0.5208120777392546,
+      "citations": 4,
+      "latency_ms": 14.675799997348804,
+      "top_sources": [
+        "onboarding_faq.md",
+        "setup_guides.md",
+        "setup_guides.md",
+        "company_overview.md"
+      ]
+    },
+    {
+      "category": "Policies & Security",
+      "query": "What is the password and MFA policy?",
+      "hit": true,
+      "keyword_precision": 1.0,
+      "similarity": 0.4838799604479691,
+      "citations": 4,
+      "latency_ms": 15.07859999401262,
+      "top_sources": [
+        "policies.md",
+        "policies.md",
+        "policies.md",
+        "policies.md"
+      ]
+    },
+    {
+      "category": "Policies & Security",
+      "query": "How do I get VPN access to internal systems?",
+      "hit": true,
+      "keyword_precision": 1.0,
+      "similarity": 0.484335639552288,
+      "citations": 4,
+      "latency_ms": 14.367399999173358,
+      "top_sources": [
+        "onboarding_faq.md",
+        "policies.md",
+        "setup_guides.md",
+        "policies.md"
+      ]
+    },
+    {
+      "category": "Policies & Security",
+      "query": "How should I handle customer PII and personal data?",
+      "hit": true,
+      "keyword_precision": 1.0,
+      "similarity": 0.45370631920468185,
+      "citations": 4,
+      "latency_ms": 14.864500000840053,
+      "top_sources": [
+        "policies.md",
+        "policies.md",
+        "policies.md",
+        "company_overview.md"
+      ]
+    },
+    {
+      "category": "Organization Structure",
+      "query": "Who leads the engineering organization?",
+      "hit": true,
+      "keyword_precision": 1.0,
+      "similarity": 0.5179091318638761,
+      "citations": 4,
+      "latency_ms": 13.609399997221772,
+      "top_sources": [
+        "org_structure.md",
+        "org_structure.md",
+        "org_structure.md",
+        "org_structure.md"
+      ]
+    },
+    {
+      "category": "Organization Structure",
+      "query": "Which Slack channels should a new engineer join?",
+      "hit": true,
+      "keyword_precision": 1.0,
+      "similarity": 0.5204463522690894,
+      "citations": 4,
+      "latency_ms": 15.660700002626982,
+      "top_sources": [
+        "onboarding_faq.md",
+        "org_structure.md",
+        "policies.md",
+        "onboarding_faq.md"
+      ]
+    },
+    {
+      "category": "Engineering Standards",
+      "query": "How many approvals does a pull request need?",
+      "hit": true,
+      "keyword_precision": 1.0,
+      "similarity": 0.4822084102103965,
+      "citations": 4,
+      "latency_ms": 15.282200001820456,
+      "top_sources": [
+        "engineering_standards.md",
+        "engineering_standards.md",
+        "onboarding_faq.md",
+        "policies.md"
+      ]
+    },
+    {
+      "category": "Engineering Standards",
+      "query": "What is the minimum test coverage requirement?",
+      "hit": true,
+      "keyword_precision": 1.0,
+      "similarity": 0.4617101831943849,
+      "citations": 4,
+      "latency_ms": 14.93339999433374,
+      "top_sources": [
+        "engineering_standards.md",
+        "setup_guides.md",
+        "policies.md",
+        "onboarding_faq.md"
+      ]
+    },
+    {
+      "category": "FAQ",
+      "query": "What should I do in my first week?",
+      "hit": true,
+      "keyword_precision": 0.6666666666666666,
+      "similarity": 0.43538947042145737,
+      "citations": 1,
+      "latency_ms": 15.641300000424962,
+      "top_sources": [
+        "onboarding_faq.md"
+      ]
+    },
+    {
+      "category": "FAQ",
+      "query": "How do I request time off?",
+      "hit": true,
+      "keyword_precision": 1.0,
+      "similarity": 0.4475803617910671,
+      "citations": 4,
+      "latency_ms": 15.129599996726029,
+      "top_sources": [
+        "policies.md",
+        "onboarding_faq.md",
+        "policies.md",
+        "onboarding_faq.md"
+      ]
+    },
+    {
+      "category": "Architecture",
+      "query": "Describe the overall platform architecture.",
+      "hit": true,
+      "keyword_precision": 0.75,
+      "similarity": 0.47515668270702377,
+      "citations": 4,
+      "latency_ms": 15.541000000666827,
+      "top_sources": [
+        "architecture_documentation.md",
+        "architecture_documentation.md",
+        "architecture_documentation.md",
+        "architecture_documentation.md"
+      ]
+    },
+    {
+      "category": "Cloud Infrastructure",
+      "query": "How are services deployed to Kubernetes on AWS?",
+      "hit": true,
+      "keyword_precision": 1.0,
+      "similarity": 0.5539260164449632,
+      "citations": 4,
+      "latency_ms": 17.595900004380383,
+      "top_sources": [
+        "architecture_documentation.md",
+        "architecture_documentation.md",
+        "setup_guides.md",
+        "engineering_standards.md"
+      ]
+    }
+  ],
+  "persona": [
+    {
+      "query": "How do I set up my development environment?",
+      "persona": "backend_sr",
+      "delta_top_score": 0.20958192763730754,
+      "mean_boost_topk": 0.1875,
+      "reranked": true,
+      "baseline_top": "setup_guides.md > Guide 4: DevOps / Infrastructure Setup > Step 1: Install Tools",
+      "persona_top": "setup_guides.md > Guide 2: Python Backend Setup (Workflow Core, Workflow Executor, Analytics) > Prerequisites",
+      "persona_top_role": "backend",
+      "persona_top_tech": "Python"
+    },
+    {
+      "query": "How do I set up my development environment?",
+      "persona": "frontend_jr",
+      "delta_top_score": 0.30000000000000004,
+      "mean_boost_topk": 0.3,
+      "reranked": false,
+      "baseline_top": "setup_guides.md > Guide 4: DevOps / Infrastructure Setup > Step 1: Install Tools",
+      "persona_top": "setup_guides.md > Guide 4: DevOps / Infrastructure Setup > Step 1: Install Tools",
+      "persona_top_role": "frontend",
+      "persona_top_tech": "React"
+    },
+    {
+      "query": "How do I set up my development environment?",
+      "persona": "devops_sr",
+      "delta_top_score": 0.28626009685613174,
+      "mean_boost_topk": 0.2375,
+      "reranked": true,
+      "baseline_top": "setup_guides.md > Guide 4: DevOps / Infrastructure Setup > Step 1: Install Tools",
+      "persona_top": "onboarding_faq.md > General Onboarding > Q3: What should I do on my first day?",
+      "persona_top_role": "devops",
+      "persona_top_tech": "Kubernetes/AWS"
+    },
+    {
+      "query": "What are the coding standards?",
+      "persona": "backend_sr",
+      "delta_top_score": 0.0,
+      "mean_boost_topk": 0.012499999999999997,
+      "reranked": false,
+      "baseline_top": "engineering_standards.md > 5. Testing Standards > Coverage Requirements",
+      "persona_top": "engineering_standards.md > 5. Testing Standards > Coverage Requirements",
+      "persona_top_role": "all",
+      "persona_top_tech": "General"
+    },
+    {
+      "query": "What are the coding standards?",
+      "persona": "frontend_jr",
+      "delta_top_score": 0.2705924065977295,
+      "mean_boost_topk": 0.14999999999999997,
+      "reranked": true,
+      "baseline_top": "engineering_standards.md > 5. Testing Standards > Coverage Requirements",
+      "persona_top": "engineering_standards.md > 5. Testing Standards > Testing Frameworks",
+      "persona_top_role": "frontend",
+      "persona_top_tech": "React"
+    },
+    {
+      "query": "How do I deploy my service?",
+      "persona": "devops_sr",
+      "delta_top_score": 0.2897345867554074,
+      "mean_boost_topk": 0.3125,
+      "reranked": true,
+      "baseline_top": "setup_guides.md > Clone the service you're working on (example: gateway-service)",
+      "persona_top": "onboarding_faq.md > General Onboarding > Q3: What should I do on my first day?",
+      "persona_top_role": "devops",
+      "persona_top_tech": "Kubernetes/AWS"
+    },
+    {
+      "query": "How do I deploy my service?",
+      "persona": "backend_sr",
+      "delta_top_score": 0.15000000000000002,
+      "mean_boost_topk": 0.175,
+      "reranked": false,
+      "baseline_top": "setup_guides.md > Clone the service you're working on (example: gateway-service)",
+      "persona_top": "setup_guides.md > Clone the service you're working on (example: gateway-service)",
+      "persona_top_role": "backend",
+      "persona_top_tech": "Node.js"
+    }
+  ]
+}
